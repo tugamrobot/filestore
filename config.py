@@ -91,12 +91,12 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',False))
-    if HAS_SSL:
-        URL = "https://individual-desirae-tugamrobot.koyeb.app/"
-    else:
-        URL = "https://individual-desirae-tugamrobot.koyeb.app/"
+        FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+        HAS_SSL=bool(getenv('HAS_SSL',False))
+        if HAS_SSL:
+         URL = "https://individual-desirae-tugamrobot.koyeb.app/"
+        else:
+         URL = "https://individual-desirae-tugamrobot.koyeb.app/"
 
 
 
