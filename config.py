@@ -96,7 +96,7 @@ class Var(object):
     if HAS_SSL:
         URL = "https://filestore-4f0y.onrender.com"
     else:
-        URL = ""
+        URL = "https://filestore-4f0y.onrender.com"
 
 
 
